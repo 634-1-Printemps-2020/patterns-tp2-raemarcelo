@@ -23,7 +23,7 @@ public class Game {
      * @param player le nouveau joueur
      */
     public void addPlayer(Player player) {
-      // TODO: Votre code ici
+      history.keySet().add(player);
     }
 
     /**

@@ -9,7 +9,12 @@ public class Coin {
    * 50% de probabilité d'obtenir HEADS, 50% de probabilité d'obtenir TAILS
    */
   public void throwCoin() {
-    // TODO : Votre code ici
+    int temp = (Math.random() <= 0.5) ? 1 : 2;
+    if (temp == 1){
+      coinState = coinState.HEADS;
+    }else {
+      coinState = coinState.TAILS;
+    }
   }
 
   public CoinState getState() {
